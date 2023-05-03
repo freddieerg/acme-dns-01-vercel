@@ -3,6 +3,18 @@
   "version": "0.0.6",
   "description": "DNS-01 challenge for Vercel",
   "author": "Freddie Ergatoudis <freddie.erg@outlook.com>",
+  "keywords": [
+    "acme",
+    "vercel",
+    "dns",
+    "dns-01",
+    "greenlock",
+    "letsencrypt"
+  ],
+  "homepage": "https://github.com/freddieerg/acme-dns-01-vercel#readme",
+  "bugs": {
+    "url": "https://github.com/freddieerg/acme-dns-01-vercel/issues"
+  },
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "license": "MIT",
