@@ -1,5 +1,5 @@
 import * as tester from 'acme-dns-01-test';
-import { Challenge } from './index';
+import Challenge from './index';
 
 if (!process.env.VERCEL_TOKEN) {
   console.error('Vercel token has not been provided');

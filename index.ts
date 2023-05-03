@@ -21,7 +21,7 @@ interface IChallenge {
   dnsAuthorization: string;
 }
 
-export class Challenge {
+export default class Challenge {
   module = 'acme-dns-01-vercel';
   options: Options;
 
