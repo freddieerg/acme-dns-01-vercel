@@ -1,6 +1,6 @@
 {
   "name": "acme-dns-01-vercel",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "DNS-01 challenge for Vercel",
   "author": "Freddie Ergatoudis <freddie.erg@outlook.com>",
   "main": "lib/index.js",
