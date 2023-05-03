@@ -150,4 +150,4 @@ class Challenge {
   }
 }
 
-export default Challenge;
+module.exports = Challenge;

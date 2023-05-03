@@ -1,5 +1,4 @@
 import * as tester from 'acme-dns-01-test';
-import Challenge from './index';
 
 if (!process.env.VERCEL_TOKEN) {
   console.error('Vercel token has not been provided');
@@ -11,7 +10,8 @@ if (!process.env.DOMAIN) {
   process.exit(1);
 }
 
-const challenger = Challenge.create({
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const challenger = require('./index').create({
   token: process.env.VERCEL_TOKEN,
 });
 

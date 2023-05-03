@@ -1,6 +1,6 @@
 {
   "name": "acme-dns-01-vercel",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "DNS-01 challenge for Vercel",
   "author": "Freddie Ergatoudis <freddie.erg@outlook.com>",
   "main": "lib/index.js",
@@ -11,6 +11,7 @@
   },
   "devDependencies": {
     "@tsconfig/recommended": "^1.0.2",
+    "@types/node": "^18.16.3",
     "@typescript-eslint/eslint-plugin": "^5.59.2",
     "@typescript-eslint/parser": "^5.59.2",
     "acme-dns-01-test": "^3.3.2",
