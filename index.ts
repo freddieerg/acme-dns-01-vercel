@@ -1,4 +1,4 @@
-import axios from "axios";
+import axios from 'axios';
 
 interface Options {
   token?: string;
@@ -22,7 +22,7 @@ interface IChallenge {
 }
 
 export class Challenge {
-  module = "acme-dns-01-vercel";
+  module = 'acme-dns-01-vercel';
   options: Options;
 
   constructor(options: Options = {}) {
@@ -54,7 +54,7 @@ export class Challenge {
       next = r.data.pagination.next;
       zones.push(
         ...r.data.domains
-          .filter((it) => it.serviceType === "zeit.world")
+          .filter((it) => it.serviceType === 'zeit.world')
           .map((it) => it.name)
       );
     }
@@ -67,7 +67,7 @@ export class Challenge {
       `https://api.vercel.com/v2/domains/${challenge.dnsZone}/records`,
       {
         name: challenge.dnsPrefix,
-        type: "TXT",
+        type: 'TXT',
         value: challenge.dnsAuthorization,
       },
       {
